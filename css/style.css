@@ -1,0 +1,194 @@
+@import 'utilities.css';
+:root {
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialised;
+}
+
+header {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 80%, 0 100%);
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover {
+    color: var(--primary);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+.home .left img {
+    width: 200px;
+}
+
+.home .right {
+    color: var(--pure);
+    margin-left: 5rem;
+}
+
+.home .right h4 {
+    font-size: 1.6rem;
+}
+
+.home .right h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--primary);
+    font-size: 3rem;
+}
+
+.home .right p {
+    margin-top: 1.6rem;
+    font-size: 1.2rem;
+}
+
+.aboutme h1 {
+    color: var(--dark);
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.aboutme span {
+    color: var(--primary);
+}
+
+.aboutme h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.aboutme ol {
+    color: var(--dark);
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.aq tr:nth-child(even) {
+    background-color: var(--dark);
+    color: var(--primary);
+}
+
+.aq tr:nth-child(odd) {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.aq th,
+td {
+    padding: 15px;
+}
+
+.aq tr:nth-child(odd):hover {
+    background-color: var(--dark);
+    color: var(--primary);
+}
+
+.aq tr:nth-child(even):hover {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.aq {
+    margin-top: 2rem;
+}
+
+.aq table {
+    margin-top: 2rem;
+}
+
+.aq h1 {
+    color: var(--primary);
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.aq span {
+    color: var(--dark);
+}
+
+.aq h2 {
+    color: var(--dark);
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.aq ol {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.aq p {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+section.aq {
+    background: var(--light);
+}
+
+section.gallery .grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery {
+    background: var(--dark);
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.grids {
+    margin-top: 1.6rem;
+}
+
+section.contact .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact h1 {
+    color: var(--dark);
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contact span {
+    color: var(--primary);
+}
+
+section.contact .card-wrapper .card {
+    text-align: center;
+    margin-top: 1.6rem;
+}
